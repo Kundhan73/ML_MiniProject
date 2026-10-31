@@ -1,0 +1,2 @@
+# Optional dependency for python reports/make_writeup.py
+reportlab>=4.0

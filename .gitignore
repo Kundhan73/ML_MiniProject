@@ -1,0 +1,28 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local credentials and editor files
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+kaggle.json
+.idea/
+.vscode/
+
+# Operating-system metadata and archives
+.DS_Store
+__MACOSX/
+._*
+*.zip
+
+# Downloaded data, derived features and resumable training caches
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+reports/quick/
+reports/cache*.pkl

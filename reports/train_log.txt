@@ -1,0 +1,26 @@
+[12:17:16] data (307511, 258), default rate 0.0807, scale_pos_weight 11.39
+[12:21:52] Logistic Regression                CV AUC 0.7754±0.0022 | test AUC 0.7777 PR-AUC 0.2641 R 0.417 P 0.277 (276.5s)
+[12:23:18] Naive Bayes                        CV AUC 0.5861±0.0475 | test AUC 0.6244 PR-AUC 0.1111 R 0.716 P 0.116 (85.2s)
+[12:34:34] Random Forest                      CV AUC 0.7649±0.0019 | test AUC 0.7680 PR-AUC 0.2527 R 0.416 P 0.254 (676.1s)
+[12:36:09] MLP (64-32)                        CV AUC 0.7651±0.0042 | test AUC 0.7654 PR-AUC 0.2414 R 0.446 P 0.241 (95.7s)
+[12:43:36] LightGBM                           CV AUC 0.7910±0.0020 | test AUC 0.7939 PR-AUC 0.2968 R 0.438 P 0.290 (446.5s)
+[12:43:36] imbalance strategies
+[12:48:14] LightGBM | none                    CV AUC 0.7902±0.0021 | test AUC 0.7939 PR-AUC 0.2968 R 0.470 P 0.276 (278.4s)
+[12:52:53] LightGBM | class weights           CV AUC 0.7882±0.0019 | test AUC 0.7934 PR-AUC 0.2937 R 0.492 P 0.263 (278.9s)
+[12:54:08] LightGBM | undersample             CV AUC 0.7850±0.0020 | test AUC 0.7905 PR-AUC 0.2864 R 0.445 P 0.283 (74.5s)
+[12:55:53] LogReg | none                      CV AUC 0.7749±0.0020 | test AUC 0.7783 PR-AUC 0.2681 R 0.416 P 0.277 (105.4s)
+[12:56:57] LogReg | undersample               CV AUC 0.7729±0.0014 | test AUC 0.7762 PR-AUC 0.2604 R 0.472 P 0.252 (64.1s)
+[13:00:40] LogReg | SMOTE                     CV AUC 0.7659±0.0014 | test AUC 0.7703 PR-AUC 0.2581 R 0.446 P 0.252 (223.1s)
+[13:00:40] paper-style balanced evaluation
+[13:00:40] EXT_SOURCE ablation
+[13:05:23] LightGBM without EXT_SOURCE        CV AUC 0.7669±0.0017 | test AUC 0.7740 PR-AUC 0.2642 R 0.471 P 0.247 (281.9s)
+[13:05:23] history ablation (122 history features)
+[13:07:50] LightGBM application table only    CV AUC 0.7646±0.0005 | test AUC 0.7701 PR-AUC 0.2624 R 0.442 P 0.252 (147.1s)
+[13:07:50] k-means per-cluster replication
+[13:09:54]   k=2: per-cluster AUC 0.7918
+[13:11:32]   k=3: per-cluster AUC 0.7884
+[13:13:11]   k=4: per-cluster AUC 0.7837
+[13:14:49]   k=5: per-cluster AUC 0.7821
+[13:14:55] final model analysis
+[13:17:50] figures
+[13:17:52] done in 60.7 min
